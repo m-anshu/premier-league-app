@@ -1,0 +1,7 @@
+- csv file migrated to PostgreSQL Database
+- connect this database to a springboot application
+- this springboot application will function as a REST API
+- allowing users to request and get the data they want out of the database
+
+
+

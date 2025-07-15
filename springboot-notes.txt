@@ -1,0 +1,25 @@
+-Annotations in Spring Boot are a form of metadata used to configure and customize a Spring Boot application. They simplify development by reducing boilerplate code and enabling declarative programming, allowing developers to define the behavior of classes, configure dependencies, and manage application components directly within the cod
+
+-Entity Class
+A simple Java class mapped to a table in a database.
+It represents a database table and each instance of it represents a row in that table.
+
+
+-Constructors initialise objects
+
+-Service layer in a Springboot application contains the business logic. Sits between the controller and the Repository(interacts with the database)
+ here the PlayerService class encapsulates the business logic of the Entity Player and is used to perform CRUD operations.
+
+- Spring-managed Components (Beans):
+Spring Boot applications are composed of Spring-managed components, also known as beans. These are typically Java classes annotated with @Component or its specialized variants like @Service, @Controller, and @Repository. Spring's Inversion of Control (IoC) container manages the lifecycle and dependencies of these beans, making them eligible for dependency injection.
+	@Component: A generic stereotype for any Spring-managed component.
+	@Service: Indicates a class that encapsulates business logic.
+	@Controller: Marks a class as a web request handler in the presentation layer (Spring MVC).
+	@Repository: Denotes a class that interacts with a data store, often simplifying data access operations.
+
+- Dependency Injection (DI) in Spring is a core feature that implements the Inversion of Control (IoC) principle. It's a design pattern where the Spring IoC container manages the creation and provision of dependencies (objects) to other objects, rather than the objects themselves creating or managing their dependencies. This process is commonly referred to as "wiring" in Spring.
+
+- findByName() (or findBy<PropertyName>):
+This is a derived query method where Spring Data JPA automatically generates the query based on the method name.
+
+- The controller layer in a springboot application handles incoming HTTP requests , delegates them to the service layer and then returns the appropriate response.
